@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, StyleSheet, ImageBackground, SafeAreaView, ActivityIndicator} from 'react-native';
+import { View, Image, StyleSheet, ImageBackground, SafeAreaView} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 export default function SplashScreen() {
@@ -15,9 +15,6 @@ export default function SplashScreen() {
             source={require('../assets/images/logo.png')} 
             style={styles.logo} 
           />
-        </View>
-        <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#fff" />
         </View>
       </SafeAreaView>
     </ImageBackground>
